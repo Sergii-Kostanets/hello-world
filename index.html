@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World!</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,12 +53,56 @@
                 <dd>A start tag, it's content and an end tag.</dd>
             </dl>
         </section>
+        <section>
+            <h2>My Timetables</h2>
+            <table>
+                <caption>My weekly timetable</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Module</th>
+                        <th scope="col">Room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Application Development</td>
+                        <td>Room 1.12</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Networks</td>
+                        <td>Room 2.03</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Databases</td>
+                        <td>Lab 2.04</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Software Testing</td>
+                        <td rowspan="2">Lab 1.07</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Project Work</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">All labs start ten minutes past the hour.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
         <p>Web Application Development</p>
         <a href="/first.html" rel="noopener noreferrer">The world's first web page</a>
         <br>
         <a href="/links.html" rel="noopener noreferrer">Exercise 2 - Lists and links</a>
+        <br>
+        <a href="/table.html" rel="noopener noreferrer">Exercise 3 - Recreate a TV listings table</a>
     </footer>
 </body>
 </html>
