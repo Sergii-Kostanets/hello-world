@@ -4,7 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 3 - Recreate a TV listings table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 4px 8px;
+            width: 100px;
+            text-align: center;
+        }
+        caption {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 4px;
+        }
+        .talk-show {
+            background-color: lightgreen;
+        }
+        .sunday-movie {
+            background-color: lightgray;
+        }
+        .news {
+            background-color: gray;
+        }
+        .news-week {
+            background-color: lightblue;
+        }
+</style>
 </head>
 <body>
+    <main>
+        <h1>Exercise 3 - Recreate a TV listings table</h1>
+        <section>
+            <h2>Website Navigation</h2>
+            <ul>
+                <li><a href="./index.html" rel="noopener noreferrer">Home</a></li>
+                <li><a href="./video4.html" rel="noopener noreferrer">Week 2 - Video 4 - A Table Step by Step</a></li>
+                <li><a href="first.html" rel="noopener noreferrer">Exercise 1 - Recreate the world's first web page</a></li>
+                <li><a href="links.html" rel="noopener noreferrer">Exercise 2 - Lists and links</a></li>
+                <li><a href="table.html" rel="noopener noreferrer">Exercise 3 - Recreate a TV listings table</a></li>
+            </ul>
+        </section>
+        <table>
+            <caption>TV LISTINGS</caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope="col">7.30pm</th>
+                    <th scope="col">8.00pm</th>
+                    <th scope="col">8.30pm</th>
+                    <th scope="col">9.00pm</th>
+                    <th scope="col">9.30pm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Monday</th>
+                    <td colspan="3" class="sunday-movie">The Sunday Movie</td>
+                    <td colspan="2" class="news">News</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tuesday</th>
+                    <td>TV Show</td>
+                    <td colspan="2">The Monday Movie</td>
+                    <td rowspan="3" class="news-week">News</td>
+                    <td class="talk-show">Talk Show</td>
+                </tr>
+                <tr>
+                    <th scope="row">Wednesday</th>
+                    <td>TV Show</td>
+                    <td colspan="2" rowspan="2">Cops</td>
+                    <td>Current Affairs</td>
+                </tr>
+                <tr>
+                    <th scope="row">Thursday</th>
+                    <td>TV Show</td>
+                    <td class="talk-show">Talk Show</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
